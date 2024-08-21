@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Launch Express Server",
+        "skipFiles": ["<node_internals>/**"],
+        "program": "${workspaceFolder}/server.js", // Cambia a la ruta correcta del archivo de entrada
+        "runtimeExecutable": "node",
+        "runtimeArgs": ["--inspect"],
+        "env": {
+          "NODE_ENV": "development"
+        },
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen"
+      }
+    ]
+  }
+  
